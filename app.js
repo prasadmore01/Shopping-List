@@ -39,7 +39,11 @@
             }
 
             show.innerHTML=str
+
+            document.getElementById('name').value='';
+            document.getElementById('price').value='';
             
+            document.getElementById('name').readOnly=false;
         }
 
         function funClick(event){
@@ -64,6 +68,8 @@
                     arr[i].price=price;
                 }
             }
+            
+           
 
             display()
 
