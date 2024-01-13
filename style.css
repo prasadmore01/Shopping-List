@@ -83,3 +83,7 @@ h1{
     text-align: center;
     text-decoration: underline rgb(129, 16, 129);
 }
+ol{
+    font-size: 20px;
+    letter-spacing: 1px;
+}

@@ -5,7 +5,7 @@
         let addBtn = document.querySelector('#addBtn');
         addBtn.addEventListener('click',addFun,false)
         
-        let show = document.querySelector('ul')
+        let show = document.querySelector('ol')
         show.addEventListener('click',funClick,false)
 
         let updateBtn = document.querySelector('#updateBtn')
@@ -15,6 +15,7 @@
         deleteBtn.addEventListener('click',deleteFun,false)
 
         let table = document.querySelector('#table')
+        let tableStr=''
 
       
 
@@ -37,7 +38,7 @@
             str=""
 
             for(let i=0;i<arr.length;i++){
-                str += "<li>"+arr[i].name+"="+arr[i].price+"</li>"
+                str += "<li>"+arr[i].name+" = "+arr[i].price+"</li>"
             }
 
             show.innerHTML=str
@@ -52,7 +53,7 @@
         function funClick(event){
             let data = event.target.textContent;
 
-            let newArr = data.split('=')
+            let newArr = data.split(' = ')
             console.log(newArr)
             document.getElementById('name').value = newArr[0];
             document.getElementById('price').value = newArr[1];
