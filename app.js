@@ -14,6 +14,8 @@
         let deleteBtn = document.querySelector('#deleteBtn')
         deleteBtn.addEventListener('click',deleteFun,false)
 
+        let table = document.querySelector('#table')
+
       
 
 
@@ -44,6 +46,7 @@
             document.getElementById('price').value='';
             
             document.getElementById('name').readOnly=false;
+
         }
 
         function funClick(event){
